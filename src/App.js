@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../src/img/Logo.png";
+import LogoW from "../src/img/LogoW.png";
 
 import {
   BsInstagram,
@@ -15,13 +15,21 @@ function App() {
       {/* NAVBAR */}
       <nav>
         <Link to="/">
-          <img src={Logo} className="logo" alt="Logo" />
+          <img src={LogoW} style={{ width: 100, height: 100 }} alt="Logo" />
         </Link>
-        <div>
-          <Link to="/services">Services</Link>
-          <Link to="/bridalhair">Bridal Hair</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/">Home</Link>
+        <div className="navItems">
+          <Link to="/services" className="navItem">
+            Services
+          </Link>
+          <Link to="/bridalhair" className="navItem">
+            Bridal Hair
+          </Link>
+          <Link to="/contact" className="navItem">
+            Contact
+          </Link>
+          <Link to="/" className="navItem">
+            Home
+          </Link>
         </div>
       </nav>
       <Outlet />
