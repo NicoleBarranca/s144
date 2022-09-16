@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Homepage() {
+  // const slides = []
   return (
     <>
     <div className="hero">
@@ -24,7 +25,7 @@ function Homepage() {
       </div>
     </div>
 
-    <ImageSlider slides={slides}/>
+    {/* <ImageSlider slides={slides}/> */}
     </>
 }
 
