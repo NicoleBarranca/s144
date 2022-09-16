@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
+    <>
     <div className="hero">
       <div className="heroBlock">
         <h1>Your hair is your crown</h1>
@@ -22,7 +23,9 @@ function Homepage() {
         </div>
       </div>
     </div>
-  );
+
+    <ImageSlider slides={slides}/>
+    </>
 }
 
 export default Homepage;
